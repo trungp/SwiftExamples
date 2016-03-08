@@ -22,6 +22,9 @@
 		54E2D7441C8E8A2500F490A4 /* NSURLSessionDownloadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54E2D7431C8E8A2500F490A4 /* NSURLSessionDownloadViewController.swift */; };
 		54E2D7461C8EB58400F490A4 /* LocalNotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54E2D7451C8EB58400F490A4 /* LocalNotificationViewController.swift */; };
 		54E2D7481C8EB5B600F490A4 /* LocalNotificationViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 54E2D7471C8EB5B600F490A4 /* LocalNotificationViewController.storyboard */; };
+		54E2D74A1C8EBB2A00F490A4 /* FaceDetectorViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 54E2D7491C8EBB2A00F490A4 /* FaceDetectorViewController.storyboard */; };
+		54E2D74C1C8EBB3500F490A4 /* FaceDetectorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54E2D74B1C8EBB3500F490A4 /* FaceDetectorViewController.swift */; };
+		54E2D7521C8ECC8700F490A4 /* monkeys.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 54E2D7511C8ECC8700F490A4 /* monkeys.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +45,9 @@
 		54E2D7431C8E8A2500F490A4 /* NSURLSessionDownloadViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSURLSessionDownloadViewController.swift; sourceTree = "<group>"; };
 		54E2D7451C8EB58400F490A4 /* LocalNotificationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalNotificationViewController.swift; sourceTree = "<group>"; };
 		54E2D7471C8EB5B600F490A4 /* LocalNotificationViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LocalNotificationViewController.storyboard; sourceTree = "<group>"; };
+		54E2D7491C8EBB2A00F490A4 /* FaceDetectorViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = FaceDetectorViewController.storyboard; sourceTree = "<group>"; };
+		54E2D74B1C8EBB3500F490A4 /* FaceDetectorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FaceDetectorViewController.swift; sourceTree = "<group>"; };
+		54E2D7511C8ECC8700F490A4 /* monkeys.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = monkeys.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,17 +82,20 @@
 		545B5D1C1C8D2D9700FF093E /* SwiftExamples */ = {
 			isa = PBXGroup;
 			children = (
+				54E2D7511C8ECC8700F490A4 /* monkeys.jpg */,
 				545B5D1D1C8D2D9700FF093E /* AppDelegate.swift */,
 				5473A4DC1C8D664900AA79B6 /* UIKitExtension.swift */,
 				545B5D1F1C8D2D9700FF093E /* ViewController.swift */,
 				545B5D2F1C8D2F4A00FF093E /* CalendarViewController.swift */,
 				5473A4DE1C8DA8BD00AA79B6 /* AlertControllerSampleViewController.swift */,
-				54E2D73B1C8E7CEB00F490A4 /* NSURLSessionViewController.swift */,
 				54E2D73D1C8E801100F490A4 /* NSURLSessionViewController.storyboard */,
-				54E2D7431C8E8A2500F490A4 /* NSURLSessionDownloadViewController.swift */,
-				54E2D7451C8EB58400F490A4 /* LocalNotificationViewController.swift */,
+				54E2D73B1C8E7CEB00F490A4 /* NSURLSessionViewController.swift */,
 				54E2D7411C8E8A0F00F490A4 /* NSURLSessionDownloadViewController.storyboard */,
+				54E2D7431C8E8A2500F490A4 /* NSURLSessionDownloadViewController.swift */,
 				54E2D7471C8EB5B600F490A4 /* LocalNotificationViewController.storyboard */,
+				54E2D7451C8EB58400F490A4 /* LocalNotificationViewController.swift */,
+				54E2D7491C8EBB2A00F490A4 /* FaceDetectorViewController.storyboard */,
+				54E2D74B1C8EBB3500F490A4 /* FaceDetectorViewController.swift */,
 				545B5D211C8D2D9700FF093E /* Main.storyboard */,
 				545B5D241C8D2D9700FF093E /* Assets.xcassets */,
 				545B5D261C8D2D9700FF093E /* LaunchScreen.storyboard */,
@@ -161,8 +170,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				54E2D7521C8ECC8700F490A4 /* monkeys.jpg in Resources */,
 				54E2D7481C8EB5B600F490A4 /* LocalNotificationViewController.storyboard in Resources */,
 				545B5D281C8D2D9700FF093E /* LaunchScreen.storyboard in Resources */,
+				54E2D74A1C8EBB2A00F490A4 /* FaceDetectorViewController.storyboard in Resources */,
 				545B5D251C8D2D9700FF093E /* Assets.xcassets in Resources */,
 				545B5D231C8D2D9700FF093E /* Main.storyboard in Resources */,
 				54E2D73E1C8E801100F490A4 /* NSURLSessionViewController.storyboard in Resources */,
@@ -180,6 +191,7 @@
 				545B5D301C8D2F4A00FF093E /* CalendarViewController.swift in Sources */,
 				54E2D7461C8EB58400F490A4 /* LocalNotificationViewController.swift in Sources */,
 				545B5D201C8D2D9700FF093E /* ViewController.swift in Sources */,
+				54E2D74C1C8EBB3500F490A4 /* FaceDetectorViewController.swift in Sources */,
 				54E2D7441C8E8A2500F490A4 /* NSURLSessionDownloadViewController.swift in Sources */,
 				5473A4DF1C8DA8BD00AA79B6 /* AlertControllerSampleViewController.swift in Sources */,
 				5473A4DD1C8D664900AA79B6 /* UIKitExtension.swift in Sources */,

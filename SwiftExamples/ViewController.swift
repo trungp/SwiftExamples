@@ -21,6 +21,7 @@ class ViewController: UITableViewController {
         tableData!.append(["NSURLSession", "NSURLSessionViewController", "NSURLSessionViewController"])
         tableData!.append(["NSURLSessionDownload", "NSURLSessionDownloadViewController", "NSURLSessionDownloadViewController"])
         tableData!.append(["Local Notification", "LocalNotificationViewController", "LocalNotificationViewController"])
+        tableData!.append(["FaceDetectorViewController", "FaceDetectorViewController", "FaceDetectorViewController"])
         
         
         
