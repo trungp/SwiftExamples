@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+    </dependencies>
+    <scenes>
+        <!--Local Notification View Controller-->
+        <scene sceneID="o5b-KU-Wi9">
+            <objects>
+                <viewController storyboardIdentifier="LocalNotificationViewController" id="tkb-Y2-Nql" customClass="LocalNotificationViewController" customModule="SwiftExamples" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="tKJ-0F-mb8"/>
+                        <viewControllerLayoutGuide type="bottom" id="POa-lX-wLB"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="4SA-vW-pTe">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Mz-Wl-Up2">
+                                <rect key="frame" x="250" y="278" width="100" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="0Yp-pb-Tgz"/>
+                                    <constraint firstAttribute="height" constant="44" id="B6y-f5-oyK"/>
+                                </constraints>
+                                <state key="normal" title="Push"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="8Mz-Wl-Up2" firstAttribute="centerY" secondItem="4SA-vW-pTe" secondAttribute="centerY" id="OLi-GR-JWT"/>
+                            <constraint firstItem="8Mz-Wl-Up2" firstAttribute="centerX" secondItem="4SA-vW-pTe" secondAttribute="centerX" id="mJI-r2-NSm"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="button" destination="8Mz-Wl-Up2" id="ht2-6v-icL"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NJ7-uq-VNx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="228" y="332"/>
+        </scene>
+    </scenes>
+</document>

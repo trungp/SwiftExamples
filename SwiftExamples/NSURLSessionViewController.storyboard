@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--URL Session View Controller-->
+        <scene sceneID="GiI-n9-w2B">
+            <objects>
+                <viewController storyboardIdentifier="NSURLSessionViewController" id="Tg4-rn-eHI" customClass="NSURLSessionViewController" customModule="SwiftExamples" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Uy7-gW-tMI"/>
+                        <viewControllerLayoutGuide type="bottom" id="pMj-29-UbJ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="wAW-ae-PHK">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wnm-5w-Q2o">
+                                <rect key="frame" x="250" y="30" width="100" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="lie-3k-6CY"/>
+                                </constraints>
+                                <state key="normal" title="Reresh"/>
+                                <connections>
+                                    <action selector="refreshButtonAction:" destination="Tg4-rn-eHI" eventType="touchUpInside" id="Ar6-y6-H1e"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="AB4-uK-TQm">
+                                <rect key="frame" x="20" y="70" width="560" height="530"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="wnm-5w-Q2o" firstAttribute="centerX" secondItem="wAW-ae-PHK" secondAttribute="centerX" id="05w-YS-6J8"/>
+                            <constraint firstItem="pMj-29-UbJ" firstAttribute="top" secondItem="AB4-uK-TQm" secondAttribute="bottom" id="7oG-RL-yzX"/>
+                            <constraint firstItem="AB4-uK-TQm" firstAttribute="leading" secondItem="wAW-ae-PHK" secondAttribute="leadingMargin" id="Kv5-ei-9Jt"/>
+                            <constraint firstItem="wnm-5w-Q2o" firstAttribute="top" secondItem="Uy7-gW-tMI" secondAttribute="bottom" constant="10" id="Zcw-y7-aWw"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="AB4-uK-TQm" secondAttribute="trailing" id="cwh-eM-2YY"/>
+                            <constraint firstItem="AB4-uK-TQm" firstAttribute="top" secondItem="wnm-5w-Q2o" secondAttribute="bottom" constant="10" id="e9F-ax-kCv"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="textView" destination="AB4-uK-TQm" id="hrg-T5-daK"/>
+                        <outlet property="view" destination="wAW-ae-PHK" id="aVD-1W-fQ1"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Abu-tz-YUe" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="262" y="282"/>
+        </scene>
+    </scenes>
+</document>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+    </dependencies>
+    <scenes>
+        <!--URL Session Download View Controller-->
+        <scene sceneID="AfO-uQ-hXh">
+            <objects>
+                <viewController storyboardIdentifier="NSURLSessionDownloadViewController" id="TNA-fm-iAh" customClass="NSURLSessionDownloadViewController" customModule="SwiftExamples" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jAE-K2-WG6"/>
+                        <viewControllerLayoutGuide type="bottom" id="Vnb-hp-nLY"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="MUX-QZ-bef">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ej4-AB-cWI">
+                                <rect key="frame" x="250" y="30" width="100" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="Lak-Tq-Ebf"/>
+                                </constraints>
+                                <state key="normal" title="Reresh"/>
+                                <connections>
+                                    <action selector="refreshButtonAction:" destination="TNA-fm-iAh" eventType="touchUpInside" id="CG2-bh-G17"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="AtK-t9-tgz">
+                                <rect key="frame" x="180" y="160" width="240" height="240"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="240" id="KBk-JJ-vse"/>
+                                    <constraint firstAttribute="width" constant="240" id="lJK-2y-y6Q"/>
+                                </constraints>
+                            </imageView>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Dxp-s1-2Cl">
+                                <rect key="frame" x="180" y="158" width="240" height="2"/>
+                            </progressView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="ej4-AB-cWI" firstAttribute="top" secondItem="jAE-K2-WG6" secondAttribute="bottom" constant="10" id="OCl-XZ-pQC"/>
+                            <constraint firstItem="ej4-AB-cWI" firstAttribute="centerX" secondItem="MUX-QZ-bef" secondAttribute="centerX" id="WmL-Le-nPA"/>
+                            <constraint firstItem="Dxp-s1-2Cl" firstAttribute="trailing" secondItem="AtK-t9-tgz" secondAttribute="trailing" id="aew-FW-uN4"/>
+                            <constraint firstItem="AtK-t9-tgz" firstAttribute="centerX" secondItem="MUX-QZ-bef" secondAttribute="centerX" id="j7C-V6-Djb"/>
+                            <constraint firstItem="Dxp-s1-2Cl" firstAttribute="leading" secondItem="AtK-t9-tgz" secondAttribute="leading" id="kmt-hz-Bjc"/>
+                            <constraint firstItem="AtK-t9-tgz" firstAttribute="top" secondItem="ej4-AB-cWI" secondAttribute="bottom" constant="100" id="qX1-0h-nmG"/>
+                            <constraint firstItem="AtK-t9-tgz" firstAttribute="top" secondItem="Dxp-s1-2Cl" secondAttribute="bottom" id="ygo-tL-Pf2"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="AtK-t9-tgz" id="67K-dx-ZRC"/>
+                        <outlet property="progressView" destination="Dxp-s1-2Cl" id="CoE-p3-yGA"/>
+                        <outlet property="refreshWithDelegateButton" destination="ej4-AB-cWI" id="Fcg-fY-ETf"/>
+                        <outlet property="view" destination="MUX-QZ-bef" id="bzx-IS-20d"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="B8y-NT-MKZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="262" y="282"/>
+        </scene>
+    </scenes>
+</document>

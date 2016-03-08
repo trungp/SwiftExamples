@@ -15,6 +15,13 @@
 		545B5D301C8D2F4A00FF093E /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 545B5D2F1C8D2F4A00FF093E /* CalendarViewController.swift */; };
 		545B5D321C8D594000FF093E /* EventKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 545B5D311C8D594000FF093E /* EventKit.framework */; };
 		5473A4DD1C8D664900AA79B6 /* UIKitExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5473A4DC1C8D664900AA79B6 /* UIKitExtension.swift */; };
+		5473A4DF1C8DA8BD00AA79B6 /* AlertControllerSampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5473A4DE1C8DA8BD00AA79B6 /* AlertControllerSampleViewController.swift */; };
+		54E2D73C1C8E7CEB00F490A4 /* NSURLSessionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54E2D73B1C8E7CEB00F490A4 /* NSURLSessionViewController.swift */; };
+		54E2D73E1C8E801100F490A4 /* NSURLSessionViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 54E2D73D1C8E801100F490A4 /* NSURLSessionViewController.storyboard */; };
+		54E2D7421C8E8A0F00F490A4 /* NSURLSessionDownloadViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 54E2D7411C8E8A0F00F490A4 /* NSURLSessionDownloadViewController.storyboard */; };
+		54E2D7441C8E8A2500F490A4 /* NSURLSessionDownloadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54E2D7431C8E8A2500F490A4 /* NSURLSessionDownloadViewController.swift */; };
+		54E2D7461C8EB58400F490A4 /* LocalNotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54E2D7451C8EB58400F490A4 /* LocalNotificationViewController.swift */; };
+		54E2D7481C8EB5B600F490A4 /* LocalNotificationViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 54E2D7471C8EB5B600F490A4 /* LocalNotificationViewController.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +35,13 @@
 		545B5D2F1C8D2F4A00FF093E /* CalendarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarViewController.swift; sourceTree = "<group>"; };
 		545B5D311C8D594000FF093E /* EventKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKit.framework; path = System/Library/Frameworks/EventKit.framework; sourceTree = SDKROOT; };
 		5473A4DC1C8D664900AA79B6 /* UIKitExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIKitExtension.swift; sourceTree = "<group>"; };
+		5473A4DE1C8DA8BD00AA79B6 /* AlertControllerSampleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertControllerSampleViewController.swift; sourceTree = "<group>"; };
+		54E2D73B1C8E7CEB00F490A4 /* NSURLSessionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSURLSessionViewController.swift; sourceTree = "<group>"; };
+		54E2D73D1C8E801100F490A4 /* NSURLSessionViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = NSURLSessionViewController.storyboard; sourceTree = "<group>"; };
+		54E2D7411C8E8A0F00F490A4 /* NSURLSessionDownloadViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = NSURLSessionDownloadViewController.storyboard; sourceTree = "<group>"; };
+		54E2D7431C8E8A2500F490A4 /* NSURLSessionDownloadViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSURLSessionDownloadViewController.swift; sourceTree = "<group>"; };
+		54E2D7451C8EB58400F490A4 /* LocalNotificationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalNotificationViewController.swift; sourceTree = "<group>"; };
+		54E2D7471C8EB5B600F490A4 /* LocalNotificationViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LocalNotificationViewController.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +80,13 @@
 				5473A4DC1C8D664900AA79B6 /* UIKitExtension.swift */,
 				545B5D1F1C8D2D9700FF093E /* ViewController.swift */,
 				545B5D2F1C8D2F4A00FF093E /* CalendarViewController.swift */,
+				5473A4DE1C8DA8BD00AA79B6 /* AlertControllerSampleViewController.swift */,
+				54E2D73B1C8E7CEB00F490A4 /* NSURLSessionViewController.swift */,
+				54E2D73D1C8E801100F490A4 /* NSURLSessionViewController.storyboard */,
+				54E2D7431C8E8A2500F490A4 /* NSURLSessionDownloadViewController.swift */,
+				54E2D7451C8EB58400F490A4 /* LocalNotificationViewController.swift */,
+				54E2D7411C8E8A0F00F490A4 /* NSURLSessionDownloadViewController.storyboard */,
+				54E2D7471C8EB5B600F490A4 /* LocalNotificationViewController.storyboard */,
 				545B5D211C8D2D9700FF093E /* Main.storyboard */,
 				545B5D241C8D2D9700FF093E /* Assets.xcassets */,
 				545B5D261C8D2D9700FF093E /* LaunchScreen.storyboard */,
@@ -140,9 +161,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				54E2D7481C8EB5B600F490A4 /* LocalNotificationViewController.storyboard in Resources */,
 				545B5D281C8D2D9700FF093E /* LaunchScreen.storyboard in Resources */,
 				545B5D251C8D2D9700FF093E /* Assets.xcassets in Resources */,
 				545B5D231C8D2D9700FF093E /* Main.storyboard in Resources */,
+				54E2D73E1C8E801100F490A4 /* NSURLSessionViewController.storyboard in Resources */,
+				54E2D7421C8E8A0F00F490A4 /* NSURLSessionDownloadViewController.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -154,8 +178,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				545B5D301C8D2F4A00FF093E /* CalendarViewController.swift in Sources */,
+				54E2D7461C8EB58400F490A4 /* LocalNotificationViewController.swift in Sources */,
 				545B5D201C8D2D9700FF093E /* ViewController.swift in Sources */,
+				54E2D7441C8E8A2500F490A4 /* NSURLSessionDownloadViewController.swift in Sources */,
+				5473A4DF1C8DA8BD00AA79B6 /* AlertControllerSampleViewController.swift in Sources */,
 				5473A4DD1C8D664900AA79B6 /* UIKitExtension.swift in Sources */,
+				54E2D73C1C8E7CEB00F490A4 /* NSURLSessionViewController.swift in Sources */,
 				545B5D1E1C8D2D9700FF093E /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
